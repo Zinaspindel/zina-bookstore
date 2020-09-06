@@ -1,0 +1,36 @@
+:host{
+    display: block;
+    margin-bottom: 100px;
+}
+button {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+.container{
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    height: 5vh;
+}
+p{
+    font-size: x-large;
+}
+.row{
+    width:100%;
+    margin-bottom: 5%;
+}
+a {
+    font-size: large;
+    margin-left: 90%;  
+    color:black;
+}
+a:hover{
+    color:black;
+}
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:lightgray;
+    height: 1px;
+  }

@@ -1,0 +1,26 @@
+<div class="global-container">
+	<div class="card login-form">
+	<div class="card-body">
+		<h3 class="card-title text-center">Sign up</h3>
+		<div class="card-text">
+			<!--
+			<div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+			<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input name="email" type="email" required email ngModel class="form-control form-control-sm" id="exampleInputEmail1" >
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input name="password" type="password" required minlength="6" ngModel  class="form-control form-control-sm" id="password">
+					<p>password must be atleast 6 characters</p>
+				</div>
+				<span *ngIf="error">{{errorMessage}}</span>
+				<span *ngIf="success">Signed up successfully.</span>
+				<button type="submit" class="btn btn-primary btn-block" [disabled]="!loginForm.valid">Sign Up</button>
+			</form>
+		</div>
+	</div>
+</div>
+</div>

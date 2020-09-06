@@ -1,0 +1,24 @@
+img{
+    height: 20vh;
+}
+.dropdown-item{
+    margin-top:7%;
+}
+#book-details{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-overflow:ellipsis;
+    margin-top:20%;
+}
+#trash-can{
+    cursor: pointer;
+    color:black;
+}
+.dropdown-item:active{
+    background-color:white;
+}
+.row{
+    margin-left:20%;
+}
+p{
+    color:black;
+}

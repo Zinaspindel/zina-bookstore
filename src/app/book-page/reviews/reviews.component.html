@@ -1,0 +1,36 @@
+<div class="col" *ngFor="let review of bookReviews">
+    <div class="review">
+        <h5 id="reviewer">{{review.writtenBy}}</h5>
+        <span id="review-rating">
+            <span [ngClass]="review.stars > 0 ? 'fa fa-star checked':'fa fa-star'"></span>
+            <span [ngClass]="review.stars > 1 ? 'fa fa-star checked':'fa fa-star'"></span>
+            <span [ngClass]="review.stars > 2 ? 'fa fa-star checked':'fa fa-star'"></span>
+            <span [ngClass]="review.stars > 3 ? 'fa fa-star checked':'fa fa-star'"></span>
+            <span [ngClass]="review.stars > 4 ? 'fa fa-star checked':'fa fa-star'"></span>
+        </span>
+        <p id="review-content">"{{review.review}}"</p>
+        <br>
+    </div>    
+</div>
+<div  id="addReview"class="col-5" *ngIf="isAuthenticated">
+    <p class="reviewWriting">Add a review!</p>
+    <form #reviewForm="ngForm" (ngSubmit)="onSubmit(reviewForm)">
+        <div class="form-group">
+            <label id="label" for="rating">rating:</label>
+            <select ngModel required name="rating" id="rating">
+                <option value="1">1 star</option>
+                <option value="2">2 stars</option>
+                <option value="3">3 stars</option>
+                <option value="4">4 stars</option>
+                <option value="5">5 stars</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="review">Enter your review:</label>
+            <input type="text"name="review" ngModel class="form-control form-control-sm">
+        </div>
+        <button type="submit" [disabled]="!reviewForm.valid" class="btn btn-secondary">Add Review</button>
+    </form>
+</div>
+
+

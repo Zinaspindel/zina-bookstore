@@ -1,0 +1,14 @@
+<li class="dropdown-item" *ngFor="let book of cart">
+    <div class="row">
+        <div class="col-6">
+            <img src="{{book.imagePath}}" alt="{{book.name}}">
+        </div>
+        <div class="col">
+            <p id="book-details">${{book.price}}</p>
+        <div id="trashIcon"class="col">
+            <i id="trash-can"style="font-size:15px" class="fa" (click)="removeBookFromCart(book)">&#xf1f8;</i>
+        </div>
+        </div>
+    </div>
+</li>
+

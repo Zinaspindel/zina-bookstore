@@ -1,0 +1,22 @@
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="example">Shop Finder</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="example">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="example">Podcast</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="example">Events</a>
+    </li>
+    <span class="nav-item" id="register-login">
+      <div class="row">
+        <p id="username" class="nav-link" *ngIf="isAuthenticated && !isAdmin">Hello {{username}}</p>
+        <a id="admin" class="nav-link" *ngIf="isAuthenticated && isAdmin" routerLink="/admin">Hello {{username}}</a>
+      <a style="cursor: pointer;" class="nav-link" *ngIf="isAuthenticated"(click)="onLogout()">Logout</a>
+      </div>
+      <a class="nav-link" routerLink="/login" *ngIf="!isAuthenticated">Register/Login</a>
+    </span>
+</ul>

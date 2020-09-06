@@ -1,0 +1,13 @@
+<div class="book-display">
+    <div class="row justify-content-center">
+        <img [src]="book.imagePath" class="img-responsive" alt="{{book.name}}" (click)="onLoadBook()">
+    </div>
+    <div class="container book-body">
+      <div id="title"class="row justify-content-center">
+          <p class= "book-title">{{bookShortenName}}</p>
+      </div>
+      <p id="author" class="row justify-content-center">{{book.author}}</p>
+      <p id="price"  class="row justify-content-center">${{book.price}}</p>
+      <p id="addToCart"class="row justify-content-center" (click)="addToCart(book)">Add To Cart</p>
+    </div>
+</div>

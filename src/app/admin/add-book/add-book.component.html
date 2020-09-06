@@ -1,0 +1,42 @@
+<div class="container">
+    <form id="bookForm" #bookForm="ngForm" (ngSubmit)="onSubmit(bookForm)">
+        <div class="form-group">
+            <label for="bookName">Book Name:</label>
+            <input type="text" name="bookName" required ngModel class="form-control form-control-sm">
+        </div>
+        <div class="form-group">
+            <label for="bookName">Book Author:</label>
+            <input type="text" name="author" required ngModel class="form-control form-control-sm">
+        </div>
+        <div class="form-group">
+            <label for="bookName">Book img URL:</label>
+            <input type="text" name="bookImg" required ngModel class="form-control form-control-sm">
+        </div>
+        <div class="form-group">
+            <label for="bookName">Book price:</label>
+            <input type="number" name="bookPrice" required ngModel class="form-control form-control-sm">
+        </div>
+        <div class="form-group">
+            <label for="bookName">Book Categories:</label>
+            <select name="bookCategories" required ngModel class="form-control form-control-sm" multiple>
+                <option value="Travel">Travel</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Romance">Romance</option>
+                <option value="Autobiography">Autobiography</option>
+                <option value="Horror">Horror</option>
+                <option value="New">New</option>
+                <option value="Popular">Popular</option>
+                <option value="Science">Science</option>
+                <option value="Philosophy">Philosophy</option>
+                <option value="Children">Children</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="bookName">Book Description:</label>
+            <input type="text" name="bookDescription" ngModel class="form-control form-control-sm">
+        </div>
+        <button type="submit" [disabled]="!bookForm.valid" class="btn btn-secondary">Add Book</button>
+    </form>
+
+</div>

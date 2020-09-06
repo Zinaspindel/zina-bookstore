@@ -1,0 +1,15 @@
+.logo {
+    height: 11vh;
+    border-style: none;
+    color:black;
+    margin-left:40%;
+    margin-bottom:1vh;
+    font-size: 5vh;
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+}
+.logo:hover{
+    color:black;
+    text-decoration-line: none;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+img {
+    max-height: 160px;
+    cursor: pointer;
+}
+.book-title{
+    text-align: center;
+    font-weight: 900;
+    font-size: large;
+}
+#author{
+    text-decoration: underline;
+}
+a {
+    color:black;
+}
+#addToCart{
+    cursor: pointer;
+}
+#addToCart:hover{
+    color:darkblue;
+}
+#title{
+    margin-top:5%;
+    height:12vh;
+    margin-bottom: 2%;
+}

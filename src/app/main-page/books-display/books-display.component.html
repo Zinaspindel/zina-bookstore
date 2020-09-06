@@ -1,0 +1,11 @@
+<div id="categories" class="container">
+  <div class="row" *ngFor="let category of booksToPromot; let i= index">
+    <p>{{categoryHeaders[i]}}</p>
+    <app-books-carousel [category]="category"></app-books-carousel>
+    <a routerLink={{categoryLinks[i]}}>see more..</a>
+    <hr>
+  </div>
+  
+</div>
+
+

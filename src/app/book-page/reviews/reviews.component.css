@@ -1,0 +1,28 @@
+.row{
+    width: 100%;
+}
+.review{
+    width:100%;
+}
+#addReview{
+    /* border-style: solid; */
+}
+#review-content{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 4.5vh;
+    margin-left: 2%;
+}
+label,#rating,button,.reviewWriting{
+    font-family: 'EB Garamond', serif;
+    font-size: 3vh;
+}
+#reviewer{
+    font-family: 'EB Garamond', serif;
+    font-size: 4vh;
+
+}
+.checked{
+    color:orange;
+}
+

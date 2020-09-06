@@ -1,0 +1,22 @@
+#book-img{
+    margin-top:5%;
+    align-content: center;
+    height:60vh;
+}
+img{
+    height: 100%;
+    margin-left: 15%;
+}
+#book-info{
+    margin-top:5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#description{
+    overflow: hidden;
+}
+#reviews{
+    width:100%;
+}
+.container {
+    min-width: 800px;
+}

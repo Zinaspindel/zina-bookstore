@@ -1,0 +1,61 @@
+.container{
+    margin-top:2vh;
+    height:75vh;
+    width: 60vw;
+    border-style: solid;
+    border-color: black;
+    font-family: 'Kumbh Sans', sans-serif;
+    min-width: 800px;
+    min-height: 550px;
+}
+#trash-can{
+    cursor: pointer;
+    text-align: center;
+    margin-top:10vh;
+}
+#title{
+    width:100%;
+    text-align: center;
+}
+.book-title{
+    font-size: large;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    text-align: center;
+}
+#author{
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    text-decoration-line: underline;
+}
+.books-container{
+    align-self: center;
+    margin-left:3vw;
+    margin-top:2vh;
+    overflow: auto;
+    height:58vh;
+    display: block;
+    min-width: 600px;
+    min-height: 410px;
+}
+#booksInCart{
+    margin-bottom: 1vh;
+    margin-left:8vw;
+    width: 40vw;
+}
+img{
+    height:30vh;
+}
+.book-body{
+    margin-top:5vh;
+}
+#total{
+    width:100%;
+    margin-top:3%;
+    font-size:large;
+    height:3vh;
+    display: block;
+    
+}

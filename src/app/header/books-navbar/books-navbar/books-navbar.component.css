@@ -1,0 +1,26 @@
+.navbar {
+    width:100%;
+    min-width: 1000px;
+}
+#cart{
+    width: 50vh;
+    height:60vh;
+}
+#title, #payment-link{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 500;
+    margin-left: 7%;
+}
+#books-in-cart{
+    border-top-style: solid;
+    height:80%;
+    overflow: auto;
+}
+#payment-link{
+    color:black;
+    /* margin-bottom: auto; */
+}
+#payment{
+    text-align: center;
+}

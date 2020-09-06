@@ -1,0 +1,31 @@
+.book-title{
+    margin-top:2%;
+    font-size: large;
+    font-weight: 500;
+    height: 8vh;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+#addToCart{
+    padding-left:25%;
+    padding-right:25%;
+    margin-left:5%;
+}
+#book{
+    margin: 3%;
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+img{
+    height:30vh;
+    cursor: pointer;
+}
+#author{
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    text-decoration-line: underline;
+}
+#category-page{
+    min-width: 1100px;
+    min-height: 480px;
+}
