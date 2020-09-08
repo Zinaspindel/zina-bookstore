@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
 import { FormsModule }   from '@angular/forms';
+import * as bootstrap from "bootstrap";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { AddBookComponent } from './admin/add-book/add-book.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { ExampleComponent } from './example/example.component';
+import { EditBookComponent } from './admin/edit-book/edit-book.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import { ExampleComponent } from './example/example.component';
     AddBookComponent,
     SearchResultsComponent,
     CartPageComponent,
-    ExampleComponent
+    ExampleComponent,
+    EditBookComponent
   ],
   imports: [
     BrowserModule,

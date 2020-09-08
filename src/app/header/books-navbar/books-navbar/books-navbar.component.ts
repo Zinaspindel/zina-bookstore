@@ -18,5 +18,9 @@ export class BooksNavbarComponent implements OnInit {
     console.log(searchValue);
     this.router.navigate(["/search",searchValue]);
   }
+  onSearchChange($event:string){
+    const searchValue = $event;
+    this.router.navigate(["/search",searchValue]);
+  }
 
 }

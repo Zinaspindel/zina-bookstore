@@ -1,42 +1,115 @@
-<div class="container">
-    <form id="bookForm" #bookForm="ngForm" (ngSubmit)="onSubmit(bookForm)">
-        <div class="form-group">
-            <label for="bookName">Book Name:</label>
-            <input type="text" name="bookName" required ngModel class="form-control form-control-sm">
-        </div>
-        <div class="form-group">
-            <label for="bookName">Book Author:</label>
-            <input type="text" name="author" required ngModel class="form-control form-control-sm">
-        </div>
-        <div class="form-group">
-            <label for="bookName">Book img URL:</label>
-            <input type="text" name="bookImg" required ngModel class="form-control form-control-sm">
-        </div>
-        <div class="form-group">
-            <label for="bookName">Book price:</label>
-            <input type="number" name="bookPrice" required ngModel class="form-control form-control-sm">
-        </div>
-        <div class="form-group">
-            <label for="bookName">Book Categories:</label>
-            <select name="bookCategories" required ngModel class="form-control form-control-sm" multiple>
-                <option value="Travel">Travel</option>
-                <option value="Sci-Fi">Sci-Fi</option>
-                <option value="Cooking">Cooking</option>
-                <option value="Romance">Romance</option>
-                <option value="Autobiography">Autobiography</option>
-                <option value="Horror">Horror</option>
-                <option value="New">New</option>
-                <option value="Popular">Popular</option>
-                <option value="Science">Science</option>
-                <option value="Philosophy">Philosophy</option>
-                <option value="Children">Children</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="bookName">Book Description:</label>
-            <input type="text" name="bookDescription" ngModel class="form-control form-control-sm">
-        </div>
-        <button type="submit" [disabled]="!bookForm.valid" class="btn btn-secondary">Add Book</button>
-    </form>
+<button id="add"
+    class="btn btn-secondary"
+    data-toggle="modal"
+    data-target="#modalLoginForm"
+    >Add New Book</button>
 
+<div
+  class="modal fade"
+  id="modalLoginForm"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Add New Book</h4>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <form id="bookForm" #bookForm="ngForm" (ngSubmit)="onSubmit(bookForm)">
+          <div class="form-group">
+            <label for="bookName">Book Name:</label>
+            <input
+              type="text"
+              name="bookName"
+              required
+              ngModel
+              class="form-control form-control-sm"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookName">Book Author:</label>
+            <input
+              type="text"
+              name="author"
+              required
+              ngModel
+              class="form-control form-control-sm"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookName">Book img URL:</label>
+            <input
+              type="text"
+              name="bookImg"
+              required
+              ngModel
+              class="form-control form-control-sm"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookName">Book price:</label>
+            <input
+              type="number"
+              name="bookPrice"
+              required
+              ngModel
+              class="form-control form-control-sm"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookName">Book Categories:</label>
+            <select
+              name="bookCategories"
+              required
+              ngModel
+              class="form-control form-control-sm"
+              multiple
+            >
+              <option value="Travel">Travel</option>
+              <option value="Sci-Fi">Sci-Fi</option>
+              <option value="Cooking">Cooking</option>
+              <option value="Romance">Romance</option>
+              <option value="Autobiography">Autobiography</option>
+              <option value="Horror">Horror</option>
+              <option value="New">New</option>
+              <option value="Popular">Popular</option>
+              <option value="Science">Science</option>
+              <option value="Philosophy">Philosophy</option>
+              <option value="Children">Children</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bookName">Book Description:</label>
+            <input
+              type="text"
+              name="bookDescription"
+              ngModel
+              class="form-control form-control-sm"
+            />
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button
+          type="submit"
+          [disabled]="!bookForm.valid"
+          class="btn btn-secondary"
+        >
+          Add Book
+        </button>
+          </div>
+      </form>
+      </div>
+    </div>
+  </div>
 </div>
+

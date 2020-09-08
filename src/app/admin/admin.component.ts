@@ -3,6 +3,8 @@ import { BookService } from '../book/book.service';
 import { Book } from '../book/book.module';
 import { DataStorageService } from '../shared/data-storage.service';
 import { Subscription } from 'rxjs';
+import { NgForm } from '@angular/forms';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-admin',
@@ -12,8 +14,8 @@ import { Subscription } from 'rxjs';
 export class AdminComponent implements OnInit {
   books:Book[];
   subscription:Subscription;
-  showAddNewBookSection = false;
-  showEditBook = false;
+  showEditForm = false;
+  bookToEdit:Book;
   constructor(private dataStorageService: DataStorageService,private bookService: BookService) { }
 
   ngOnInit(): void {
@@ -22,6 +24,9 @@ export class AdminComponent implements OnInit {
       (books:Book[])=>{
         this.books = books;
       })
+  }
+  changeEditMode($event){
+    this.showEditForm = $event;
   }
   onSaveData(){
     this.dataStorageService.storeBooks();
@@ -32,13 +37,8 @@ export class AdminComponent implements OnInit {
   onDelete(book:Book){
     this.bookService.deleteBook(book.name);
   }
-  onAddNewBook(){
-    this.showEditBook = false;
-    this.showAddNewBookSection = !this.showAddNewBookSection;
+  onEdit(book:Book){
+    this.showEditForm = !this.showEditForm;
+    this.bookToEdit = book;
   }
-  // onEdit(book:Book){
-  //   this.showAddNewBookSection = false;
-  //   this.showEditBook = !this.showEditBook;
-
-  // }
 }

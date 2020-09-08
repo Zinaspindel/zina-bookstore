@@ -3,7 +3,7 @@
         <h2 id="title">Shopping Cart</h2>
     </div>
     <span id="cartIsEmpty" *ngIf="booksInCart.length==0">Your shopping cart is empty, continue shopping!</span>
-    <div class="books-container">
+    <div class="row books-container">
         <div id="booksInCart" class="row" *ngFor="let book of booksInCart">
             <div class="col justify-content-center">
                 <img [src]="book.imagePath" class="img-responsive" alt="{{book.name}}">

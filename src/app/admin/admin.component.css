@@ -1,3 +1,6 @@
+:host{
+    min-width:1400px;
+}
 .adminEdit{
     display: block;
     margin-top:15%;
@@ -6,10 +9,24 @@
     margin-top:5%;
     margin-bottom: 5%;
 }
+.book-title{
+    overflow: hidden;
+    white-space: nowrap;
+}
 button {
     margin-right:2%;
     margin-left:2%;
 }
 img{
     max-height: 170px;
+}
+.buttons{
+    width: 100%;
+}
+#edit{
+    margin-left: 10%;
+}
+#delete{
+    margin-left: 18%;
+    margin-right:15%;
 }

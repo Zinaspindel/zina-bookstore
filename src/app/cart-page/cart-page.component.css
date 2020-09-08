@@ -1,12 +1,12 @@
 .container{
-    margin-top:2vh;
+    margin-top:10%;
     height:75vh;
     width: 60vw;
     border-style: solid;
     border-color: black;
     font-family: 'Kumbh Sans', sans-serif;
     min-width: 800px;
-    min-height: 550px;
+    min-height: 400px;
 }
 #trash-can{
     cursor: pointer;
@@ -31,19 +31,20 @@
     text-decoration-line: underline;
 }
 .books-container{
+    width:100% ;
     align-self: center;
-    margin-left:3vw;
+    align-items: center;
+    align-content: center;
     margin-top:2vh;
     overflow: auto;
-    height:58vh;
-    display: block;
-    min-width: 600px;
-    min-height: 410px;
+    height:56vh;
+    min-width: 900px;
+
 }
 #booksInCart{
     margin-bottom: 1vh;
-    margin-left:8vw;
-    width: 40vw;
+    width: 55vw;
+    margin-left:12%;
 }
 img{
     height:30vh;
@@ -53,9 +54,6 @@ img{
 }
 #total{
     width:100%;
-    margin-top:3%;
     font-size:large;
-    height:3vh;
-    display: block;
-    
+    height:5%;
 }
